@@ -16,7 +16,7 @@ public class Orange {
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\justin\\Downloads\\geckodriver-v0.26.0-win64\\geckodriver.exe");
 		WebDriver driver= new FirefoxDriver();
 	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	Thread.sleep(3000);
+	Thread.sleep(2000);
 	    driver.manage().window().maximize();
 	    driver.findElement(By.name("username")).sendKeys("Admin");
 	    driver.findElement(By.name("password")).sendKeys("admin123");
@@ -26,7 +26,7 @@ public class Orange {
 	new WebDriverWait(driver,50).until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("Add Employee")))).click();
 	    driver.findElement(By.name("firstName")).sendKeys("jesmin");
 	    driver.findElement(By.name("lastName")).sendKeys("thereza");
-	Thread.sleep(3000);
+	Thread.sleep(2000);
 	driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]")).click();
 	}
 
